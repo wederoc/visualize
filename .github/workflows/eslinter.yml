@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install modules
-        run: yarn
+        run: npm install
       - name: Lint
         run: eslint .
