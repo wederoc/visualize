@@ -10,4 +10,4 @@ jobs:
       - name: Install modules
         run: npm install
       - name: Lint
-        run: eslint .
+        run: npm run lint
