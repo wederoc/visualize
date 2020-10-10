@@ -1,0 +1,48 @@
+{
+  "name": "visualize",
+  "version": "1.0.0",
+  "description": "Visualize Data",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wederoc/visualize.git"
+  },
+  "keywords": [
+    "D3",
+    "NodeJS",
+    "Firebase",
+    "Graphs",
+    "Data"
+  ],
+  "author": "Rick Yust",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/chai": "^4.2.13",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.8",
+    "chai": "^4.2.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-unicorn": "^22.0.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "mocha": "^8.1.3",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^13.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "faker": "^5.1.0",
+    "lodash": "^4.17.20",
+    "logging": "^3.2.0",
+    "lorem-ipsum": "^2.0.3",
+    "randomstring": "^1.1.5",
+    "uuid": "^8.3.1"
+  }
+}
