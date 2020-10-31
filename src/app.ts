@@ -1,14 +1,11 @@
-"use strict";
+import express from "express";
+import path from "path";
 
-const express = require("express");
-const path = require("path");
-
-const createLogger = require("logging").default;
-
-const logger = createLogger("Sommelier - Client Server");
+import { init } from "../configuration/logger";
+const logger = init("Client App Server");
 
 const app = express();
-const PORT = 5501;
+const port = 5501; // default port to listen
 
 // app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/'));
@@ -22,6 +19,6 @@ app.get("/", (request, result) => {
   result.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`)
+app.listen(port, () => {
+  logger.info(`Listening on port ${port}`);
 });
